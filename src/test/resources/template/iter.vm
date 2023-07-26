@@ -1,0 +1,7 @@
+#**
+  行最后添加##，可以去掉回车换行 
+*###
+#set($ar = [0..10])
+#set($my = "oh")
+#foreach($elem in $ar) $elem##
+#end

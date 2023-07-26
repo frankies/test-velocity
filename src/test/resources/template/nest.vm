@@ -1,0 +1,12 @@
+###---------------
+#macro( inner $foo )
+  inner : $foo
+#end
+
+#macro( outer $foo )
+   #set($bar = "outerlala")
+   outer : $foo
+#end
+
+##set($bar = 'calltimelala')
+##outer( "#inner($bar)" )

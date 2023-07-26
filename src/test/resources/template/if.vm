@@ -1,0 +1,7 @@
+#if($!{CSS})
+ #foreach($_css in ${CSS})
+   <link type="text/css" rel="stylesheet" href="${ContextPath}/$_css">
+ #end
+#end
+#if($!{CSS})Ok#else NG#end
+---#if($!{foo} && $foo == $bar)it's true!#{else}it's not!#end

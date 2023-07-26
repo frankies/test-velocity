@@ -1,0 +1,17 @@
+#set($str = "hello world")
+#set($int = 1)
+#set($arr = [1,2])
+#set($boolean = true)
+#set($map = {"key1":"value1", "key2":"value2"})
+
+## 在字符串中也可以引用之前定义过的变量
+#set($str2 = "$str , how are you !")
+#set($str3 = '$str , how are you !')
+    
+${str}
+${int}
+${arr}
+${boolean}
+${map.key1}--${map.key2}
+${str2}
+${str3}

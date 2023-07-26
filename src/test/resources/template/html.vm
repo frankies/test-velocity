@@ -1,0 +1,40 @@
+#macro(tablerows $color $productList)
+    #foreach($product in $productList)
+        <tr>
+            <td bgcolor=$color>$product.name</td>
+        </tr>
+    #end
+#end
+
+
+#macro( tablerows $color $somelist )
+#foreach( $something in $somelist )
+    <tr><td bgcolor=$color>$something</td></tr>
+#end
+#end
+
+#set($ar = [0..10]) 
+#foreach($elem in $ar)
+    $elem
+#end
+
+#tablerows("red")
+
+
+###---------------
+#macro( inner $foo )
+  inner : $foo
+#end
+
+#macro( outer $foo )
+   #set($bar = "outerlala")
+   outer : $foo
+#end
+
+##set($bar = 'calltimelala')
+##outer( "#inner($bar)" )
+
+
+#define( $block )Hello $who#end
+#set( $who = 'World!' )
+$block

@@ -1,0 +1,14 @@
+#*
+  The iterator example
+*# 
+#set($items=["Not", "haha", "fault"] )
+#foreach ( $item in $items) ${foreach.index}-$item #end
+#set($map = {"key1":"value1", "key2":"value2"})
+#foreach($entry in $map.entrySet())
+    $entry.key -- $entry.value
+#end
+
+#set($hobbies=["1", "2"])
+#foreach($str in $hobbies)
+    ${foreach.index} -- ${str}  <br>
+#end
