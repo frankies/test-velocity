@@ -18,7 +18,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>${version.java}</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
-		<spring.version>3.0.2.RELEASE</spring.version>
+		<spring.version>6.0.11</spring.version>
 	</properties>
 
 	<!--	<dependencyManagement>
